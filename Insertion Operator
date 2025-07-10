@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+int X = 100;
+
+cout<<"The Value Of X is : "<<X<<endl;  
+return 0;
+
+}
+
