@@ -1,0 +1,21 @@
+#include<iostream>
+#include<string>
+
+class Person {
+	public:
+ 	std::string Name;
+ 	int Age;
+ 	float Height;
+
+ Person(std::string n, int a, float h) : Name(n), Age(a), Height(h) {}
+
+void introduce() {
+ 	std::cout <<"Hello, my name is "<< Name <<"."<< std::endl;
+ }
+ };
+
+int main() {
+ 	Person pitter("pitter", 37, 5.1f);
+ 	pitter.introduce();
+return 0;
+}
