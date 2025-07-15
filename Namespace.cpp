@@ -1,17 +1,17 @@
 #include<iostream>
-
+// Define a namespace called Math
+namespace Math {
+	int add(int a, int b) {
+		return a + b;
+	}
+   }
 int main() {
-int* arr = New int[5];
-for (int i = 0; i<5; ++i) {
-arr[i] = i + 1;
-}
+// Use the add function from the Math namespace
+ 	std::cout <<"Sum: "<<Math::add(5, 3) << std::endl;
 
-for (int i = 0; i<5; ++i) {
-std::cout << arr[i] <<" "; // Output: 1 2 3 4 5
-}
-std::cout << std::endl;
-delete[] arr; // Deallocate the array memory
+// Alternatively, with 'using' directive
+	using namespace Math;
+	std::cout <<"Sum: "<<add(7, 2) << std::endl;
 
-return 0;
+	return 0;
 }
-
